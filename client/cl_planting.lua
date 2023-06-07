@@ -1,5 +1,4 @@
-QBCore = exports['qb-core']:GetCoreObject()
-PlayerJob = QBCore.Functions.GetPlayerData().job
+PlayerJob = ESX.GetPlayerData().job
 local seedUsed = false
 
 --- Functions
@@ -25,7 +24,7 @@ end
 --- Player load, unload and update handlers
 
 RegisterNetEvent('QBCore:Client:OnPlayerLoaded', function()
-    PlayerJob = QBCore.Functions.GetPlayerData().job
+    PlayerJob = ESX.GetPlayerData().job
 end)
 
 RegisterNetEvent('QBCore:Client:OnPlayerUnload', function()

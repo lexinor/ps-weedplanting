@@ -7,6 +7,8 @@ description 'Project Sloth Weedplanting script'
 author 'Lionh34rt'
 
 shared_scripts {
+    "@es_extended/imports.lua",
+    "@ox_lib/init.lua",
     'shared/sh_shared.lua',
     'shared/locales.lua',
 }
@@ -28,5 +30,5 @@ server_script {
 
 dependencies {
     'PolyZone',
-	'qb-target'
+	'ox_target'
 }
